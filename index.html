@@ -2,8 +2,45 @@
 <html>
 <head>
 	<title>Trivia Game</title>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
+<div class="row">
+			<div class="col-sm-12 header">
+			</div>
+		</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12" id="question">
+			What is the answer to this question?
+			</div>
+			<hr>
+		</div>
+		<div class="row">
+			<div class="col-sm-12" id="answers">
+				<input type="radio" name="q1" value="one">
+				<span class="answer" id="a1">one</span>
+				<input type="radio" name="q1" value="two">
+				<span class="answer" id="a2">two</span>
+				<input type="radio" name="q1" value="three">
+				<span class="answer" id="a3">three</span>
+				<input type="radio" name="q1" value="four">
+				<span class="answer" id="a4">four</span>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 timer">
+			<p><span id="timer">10</span> seconds left</p>
+			</div>
+		</div>
+	</div>
 
+	<script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+	<script type="text/javascript" src="assets/javascript/app.js" >
+	</script>
 </body>
 </html>

@@ -1,0 +1,42 @@
+body{
+	background-image: url("../images/grey_wash_wall_RED.png");
+
+}
+
+.container{
+	background-image: url("../images/grey_wash_wall.png");
+	min-height: 150px; 
+	text-align: center;
+	border: #f8eb00 10px double;
+}
+
+
+.header {
+	margin-top: 35px;
+}
+
+#question{
+	color: white;
+	font-size: 18px;
+	margin: 15px 5px 5px 10px;
+}
+
+#answers{
+	color: yellow;
+	vertical-align: center;
+	margin: 15px;
+}
+
+.timer{
+	color: white;
+	font-size: 16px;
+	margin: 10px;
+}
+
+#timer{
+	font-size: 20px;
+}
+
+.answer{
+	margin: 10px 15px 10px 2px;
+}
