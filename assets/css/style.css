@@ -10,6 +10,14 @@ hr{
 	max-width: 80%;
 }
 
+button{
+	font-size: 50px;
+	padding-right: 50px;
+	padding-left: 50px; 
+	position: relative;
+	top: 140px;
+}
+
 .container{
 	background-image: url("../images/grey_wash_wall.png");
 	min-height: 150px; 
@@ -17,6 +25,9 @@ hr{
 	border: #fdd105 10px double;
 }
 
+.content{
+	visibility: hidden;
+}
 
 .header {
 	margin-top: 35px;
@@ -31,10 +42,11 @@ hr{
 	padding: 15px 5px 10px 5px;
 }
 
-#answers{
+.answer{
 	color: #fdd105;
-	vertical-align: center;
-	margin: 15px;
+	text-align: center;
+	padding:3px 50px 3px 50px;
+	font-size: 20px;
 }
 
 .timer{
@@ -47,6 +59,7 @@ hr{
 	font-size: 20px;
 }
 
-.answer{
-	margin: 10px 15px 10px 2px;
+.answer:hover{
+	border: solid white 2px;
+	background-color: rgba(0,0,0,.3);
 }

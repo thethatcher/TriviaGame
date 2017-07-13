@@ -6,47 +6,50 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
-<div class="row">
-			<div class="col-sm-12 header">
-				<img src="assets/images/crown.png" class="center-block">
-				<p>Real Salt Lake Trivia Game</p>
-			</div>
+	<div class="row">
+		<div class="col-sm-12 header">
+			<img src="assets/images/crown.png" class="center-block">
+			<p>Real Salt Lake Trivia Game</p>
 		</div>
+	</div>
 	<div class="container">
-		<div class="row">
-			<div class="col-sm-12" id="question">
-			<span id="questionText"> What is the answer to this question?</span>
+		<button>Start</button>
+		<div class="content">
+			<div class="row">
+				<div class="col-sm-12" id="question">
+				<span id="questionText"> What is the answer to this question?</span>
+				</div>
+			</div>
 			<hr>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-sm-12" id="answers">
-				<div class="row">
-					<div class="col-sm-6">
-						<input type="radio" name="answer" value="1">
-						<span class="answer" id="a1">one</span>
-					</div>
-					<div class="col-sm-6">
-						<input type="radio" name="answer" value="2">
-						<span class="answer" id="a2">two</span>
+			<div class="row">
+				<div class="col-sm-12" id="answers">
+					<div class="row">
+						<div class="col-sm-12">
+							<span class="answer" id="a1">one</span>
+						</div>
+					<div class="row">
+						<div class="col-sm-12">
+							<span class="answer" id="a2">two</span>
+					</div>	
+						</div>
+					<div class="row">
+						<div class="col-sm-12">
+							<span class="answer" id="a3">three</span>
+					</div>	
+						</div>
+					<div class="row">
+						<div class="col-sm-12">
+							<span class="answer" id="a4">four</span>
+					</div>	
+						</div>
 					</div>
 				</div>
-				<div class="row">
-						<div class="col-sm-6">
-						<input type="radio" name="answer" value="3">
-						<span class="answer" id="a3">three</span>
-					</div>
-					<div class="col-sm-6">
-						<input type="radio" name="answer" value="4">
-						<span class="answer" id="a4">four</span>
-					</div>
-				</div>
 			</div>
-		</div>
-		<div class="row">
-			<div class="col-sm-12 timer">
-			<p><span id="timer">10</span> seconds left</p>
-			<p><span id="result">Answer the question!</span></p>
+			<div class="row">
+				<div class="col-sm-12 timer">
+				<p><span id="timer">10</span> <span id="timerMsg">seconds left</span></p>
+				<p><span id="result">Answer the question!</span></p>
+				</div>
 			</div>
 		</div>
 	</div>
