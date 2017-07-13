@@ -92,6 +92,10 @@ function betweenQuestion(){
 
 function score(){
 	$question.text("Game completed!");
+	for (var i = 0; i < $answers.length; i++) {
+		$answers[i].removeClass('answer');
+		$answers[i].addClass('scoreCard');
+	}
 		$answers[0].css('visibility','hidden');
 		$answers[1].text('Correct answers: ' + right);
 		$answers[2].text('Incorrect answers: ' + wrong);
