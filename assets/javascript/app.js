@@ -17,19 +17,22 @@ var questionArray = [new question("How many MLS championships has RSL won?","1",
 	new question("Which position does Nick Rimando play?","Keeper","Striker","Centerback","Midfielder"),
 	new question("What color is not an RSL color?","Cerulean","Claret","Cobalt","Gold")]
 
+shuffleArray(questionArray);
+
 function question(q,a1,a2,a3,a4){//a1 MUST be the correct answer!
 	this.question = q;
 	this.answers = [a1,a2,a3,a4];
 	this.correct = a1;
 	shuffleArray(this.answers);
-	function shuffleArray(array){
-		var j, x, i;
-	    for (i = array.length; i; i--) {
-	        j = Math.floor(Math.random() * i);
-	        x = array[i - 1];
-	        array[i - 1] = array[j];
-	        array[j] = x;
-    	}
+}
+
+function shuffleArray(array){
+	var j, x, i;
+    for (i = array.length; i; i--) {
+        j = Math.floor(Math.random() * i);
+        x = array[i - 1];
+        array[i - 1] = array[j];
+        array[j] = x;
 	}
 }
 
