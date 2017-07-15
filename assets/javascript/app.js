@@ -1,5 +1,6 @@
 var interval;
 var seconds = 10;
+var answerEnabled = false;
 var $question = $("#question");
 var $answers = [$('#a1'),$('#a2'),$('#a3'),$('#a4')];
 var $timer = $('#timer');
@@ -43,21 +44,25 @@ $("button").click(function(){
 });
 
 $('.answer').click(function(){
-	if ($(this).text() === questionArray[questionCounter].correct) {
-		console.log("correct answer chosen");
-		$result.text("Correct!")
-		right++;
+	if (answerEnabled) {
+		answerEnabled = false;
+		if ($(this).text() === questionArray[questionCounter].correct) {
+			console.log("correct answer chosen");
+			$result.text("Correct!")
+			right++;
+		}
+		else{
+			console.log("incorrect answer chosen");
+			$result.text("Wrong! The correct answer is " + questionArray[questionCounter].correct);
+			wrong++;
+		}
+		betweenQuestion();
 	}
-	else{
-		console.log("incorrect answer chosen");
-		$result.text("Wrong! The correct answer is " + questionArray[questionCounter].correct);
-		wrong++;
-	}
-	betweenQuestion();
 });
 
 function nextQuestion(){
 	console.log('nextQuestion called');
+	answerEnabled = true;
 	interval = setInterval(timer,1000);
 	$question.text(questionArray[questionCounter].question);
 	for (var i = 0; i < $answers.length ; i++) {
@@ -81,6 +86,7 @@ function timer(){
 }	
 
 function betweenQuestion(){
+	answerEnabled = false;
 	console.log('betweenQuestion called');
 	clearInterval(interval);
 	$('#timerMsg').css("visibility","hidden");
